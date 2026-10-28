@@ -10,53 +10,251 @@
 <body>
     <main>
         <nav class="navbar">
-            <a href="a" class="logo">Logo</a>
-             <button class="tab-btn" onclick="openTab('Home')">Home</button>
-                <button class="tab-btn" onclick="openTab('About')">About</button>
-                <button class="tab-btn" onclick="openTab('Portfolio')">Portfolio</button>
-                 <button class="tab-btn" onclick="openTab('Service')">Service</button>
-                  <button class="tab-btn" onclick="openTab('Contact')">Contact</button>
+           
+            <img src="JA1.png" alt="Logo" class="logo">
+           
+            <button class="burger-btn" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <button class="tab-btn" onclick="openTab('home')"><span class="icon">🏠</span>Home</button>
+                <button class="tab-btn" onclick="openTab('about')"><span class="icon">📖</span>About</button>
+                <button class="tab-btn" onclick="openTab('portfolio')"><span class="icon">🗂️</span>Portfolio</button>
+                <button class="tab-btn" onclick="openTab('service')"><span class="icon">✨</span>Service</button>
+                <button class="tab-btn" onclick="openTab('contact')"><span class="icon">📩</span>Contact</button>
+                <button class="tab-btn" onclick="openTab('login', 'login')"><span class="icon">🔐</span>Login</button>
+                <button class="signup-btn" onclick="openTab('login', 'register')">Inscription</button>
+            </div>
         </nav>
         <div class="content">
             <div class="info">
                 <h1>Jeunesse Adventiste</h1>
-                <p>Hitarika ny tanora hanana fifandraisana tena izy amin'i Jesosy sy hanampy azy ireo handray am-po ny antsony hanao mpianatra sy handray anjara ain'ny Iraka</p>
-                <a href="a" class="but">Inscription</a>
+                <p>"Hitarika ny tanora hanana fifandraisana tena izy amin'i Jesosy sy hanampy azy ireo handray am-po ny antsony hanao mpianatra sy handray anjara ain'ny Iraka"</p>
             </div>
-            <nav class="nav">
-              
-            </nav>
 
-            <div class="login-wrapper">
-                <div class="login-box">
-                    <form action="">
-                        <h1>Login</h1>
-                        <div class="input-box">
-                            <input type="text" placeholder="Username" required>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Password" required>
-                        </div>
-                        <div class="remember-forgot">
-                            <label> <input type="checkbox">Remember me</label>
-                            <a href="a">Forgot password?</a>
-                        </div>
-                        <button type="submit" class="btn">Login</button>
-                        <div class="register-link">
-                            <p>Don't have an account?</p>
-                            <a href="a">Register</a>
-                        </div>
-                    </form>
+            <div class="hero-visual">
+                <div class="photo-card large">
+                    <span class="badge">✦ Commande</span>
+                    <h3>Car l'amour de Christ nous presse</h3>
+                </div>
+                <div class="photo-card small">
+                    <span class="mini-title">Leadership</span>
+                    <p>Former, inspirer et servir.</p>
                 </div>
             </div>
 
-            <div id="About" class="tab-content">
-                
+            <nav class="nav"></nav>
+
+            <div id="home" class="tab-content active">
+                <h2>Accueil</h2>
+                <p>Bienvenue dans notre communauté jeune, un espace de croissance spirituelle, d’apprentissage, de service et de fraternité.</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>📖 Foi</h3>
+                        <p>Renforcer la vie chrétienne et la relation avec Jésus.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🎓 Éducation</h3>
+                        <p>Développer la connaissance, la discipline et le leadership.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🤝 Service</h3>
+                        <p>Participer activement aux missions et au bien commun.</p>
+                    </div>
+                </div>
             </div>
-        
+
+            <div id="about" class="tab-content">
+                <h2>À propos</h2>
+                <p>Notre mouvement a pour mission d’accompagner les jeunes dans leur quête de sens, leur développement personnel et leur engagement au service de l’Église et de la société.</p>
+                <ul class="info-list">
+                    <li>Encadrement spirituel et moral</li>
+                    <li>Ateliers de leadership et de formation</li>
+                    <li>Activités communautaires et missionnaires</li>
+                </ul>
+            </div>
+
+            <div id="portfolio" class="tab-content">
+                <h2>Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3>🌍 Mission jeunesse</h3>
+                        <p>Visites, accompagnement et projets de service en communauté.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3>🧠 Ateliers</h3>
+                        <p>Formations sur le leadership, la prière et la vie chrétienne.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3>🎉 Événements</h3>
+                        <p>Camps, retraites, jours de réflexion et célébrations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="service" class="tab-content">
+                <h2>Services</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <h3>💬 Conseil pastoral</h3>
+                        <p>Accompagnement de jeunes en quête de direction et de paix intérieure.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>📚 Formation</h3>
+                        <p>Cours, rencontres et ateliers pour renforcer les compétences et la foi.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>🙌 Engagement</h3>
+                        <p>Opportunités pour servir, inspirer et participer à des actions sociales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="tab-content">
+                <h2>Contact</h2>
+                <div class="contact-box">
+                    <p><strong>Email :</strong> jeunesseadventiste@example.com</p>
+                    <p><strong>Téléphone :</strong> +261 34 00 000 00</p>
+                    <p><strong>Adresse :</strong> RN7, Sambaina Vohitsoa </p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message"></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+
+            <div id="login" class="tab-content">
+                <div class="auth-box">
+                    <div class="auth-header">
+                        <button type="button" class="auth-tab active" data-auth="login" onclick="openTab('login', 'login')">Connexion</button>
+                        <button type="button" class="auth-tab" data-auth="register" onclick="openTab('login', 'register')">Inscription</button>
+                    </div>
+
+                    <div id="loginFormBox" class="auth-form active">
+                        <form class="login-box" action="#">
+                            <h1>Connexion</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="Nom d'utilisateur" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Mot de passe" required>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox"> Se souvenir</label>
+                                <a href="#">Mot de passe oublié ?</a>
+                            </div>
+                            <button type="submit" class="btn">Se connecter</button>
+                            <div class="register-link">
+                                <p>Vous n'avez pas de compte ?</p>
+                                <a href="#" onclick="openTab('login', 'register'); return false;">Créer un compte</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="registerFormBox" class="auth-form">
+                        <form class="register-box" action="#">
+                            <h1>Inscription</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="Prénom" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" placeholder="Nom" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" placeholder="Adresse e-mail" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Mot de passe" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Confirmer le mot de passe" required>
+                            </div>
+                            <button type="submit" class="btn">Créer mon compte</button>
+                            <div class="register-link">
+                                <p>Vous avez déjà un compte ?</p>
+                                <a href="#" onclick="openTab('login', 'login'); return false;">Se connecter</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h4>Jeunesse Adventiste</h4>
+                <p>Une communauté inspirante pour les jeunes.</p>
+            </div>
+            <div>
+                <h4>Liens</h4>
+                <ul>
+                    <li>Accueil</li>
+                    <li>À propos</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: miaritsoa@gmail.com</li>
+                    <li>Téléphone: +261 34 12 345</li>
+                    <li>Adresse: RN7 Vohitsoa Sambaina</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(tabId, formMode = 'login') {
+            const tabs = document.querySelectorAll('.tab-content');
+            const info = document.querySelector('.info');
+            const navLinks = document.getElementById('navLinks');
+            const burgerBtn = document.querySelector('.burger-btn');
+            const authForms = document.querySelectorAll('.auth-form');
+            const authTabs = document.querySelectorAll('.auth-tab');
+
+            tabs.forEach(tab => {
+                tab.classList.toggle('active', tab.id === tabId);
+            });
+
+            if (tabId === 'login') {
+                authForms.forEach(form => {
+                    form.classList.toggle('active', form.id === (formMode === 'register' ? 'registerFormBox' : 'loginFormBox'));
+                });
+
+                authTabs.forEach(tab => {
+                    tab.classList.toggle('active', tab.dataset.auth === formMode);
+                });
+            }
+
+            if (info) {
+                info.style.display = tabId === 'home' ? 'block' : 'none';
+            }
+
+            if (navLinks && window.innerWidth <= 900) {
+                navLinks.classList.remove('open');
+            }
+
+            if (burgerBtn && window.innerWidth <= 900) {
+                burgerBtn.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        const burgerBtn = document.querySelector('.burger-btn');
+        const navLinks = document.getElementById('navLinks');
+
+        if (burgerBtn && navLinks) {
+            burgerBtn.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('open');
+                burgerBtn.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+    </script>
 </body>
 </html>
